@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Silkscreen&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: silkscreen;
+}
+
+body{
+    background-color: #1B1533;
+    /* 256D85 47B5FF DFF6FF */
+    color: white;
+
+}
+
+nav{
+    background-color: #1B1533;
+    top: 0;
+    padding:1rem ;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+
+}
+
+.navbtn{
+    border: #08ceff solid .1rem;
+    border-radius:1.2rem 0 0 1.2rem;
+    border-color: #08ceff solid 1px;
+    background: #1B1533;
+    color: white;
+    padding: 0.45rem 1.65rem .65rem .85rem;
+    transition-duration: 0.3s;
+    margin: 0 0 0 -1.2rem;
+}
+
+.navbtn:hover{
+    background-color: #08ceff;
+    box-shadow: 0 0 10px#08ceff;
+    color: black;
+}
+
+.navbtn-cur{
+    border: #08ceff solid .1rem;
+    border-radius:1.2rem 0 0 1.2rem;
+    border-color: #08ceff solid 1px;
+    background: #08ceff;
+    box-shadow: 0 0 10px#08ceff;
+    color: black;
+    padding: 0.45rem 1.65rem .65rem .85rem;
+    margin: 0 0 0 -1.2rem;
+}
+
+@media (max-width:480px) {
+    nav{
+        display:block;
+        /* justify-content: center; */
+        padding: 5% 5% 5% 16%;
+    }
+
+    nav>h1{
+        padding-bottom: 8%;
+    }
+
+    nav>ul{
+        padding-left: 7%;
+    }
+}
