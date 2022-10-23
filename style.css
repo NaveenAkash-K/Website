@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Silkscreen&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
+/* common */
 *{
     padding: 0;
     margin: 0;
@@ -9,24 +10,30 @@
 
 body{
     background-color: #1B1533;
-    /* 256D85 47B5FF DFF6FF */
     color: white;
-
 }
 
 nav{
     background-color: #1B1533;
-    top: 0;
     padding:1rem ;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 10px #00eeff;
+}
+
+nav > section{
+    display: flex;
+    
+}
+
+nav > section > h1{
+    padding: .5rem 0 0 1rem;
 }
 
 nav > ul{
     list-style-type: none;
     display: flex;
-
 }
 
 .navbtn{
@@ -57,18 +64,57 @@ nav > ul{
     margin: 0 0 0 -1.2rem;
 }
 
+footer{
+    border-top: 1px solid white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: #0f0a22;
+    box-shadow: 0 0 10px #00eeff;
+}
+
+footer > section {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+footer > section > a{
+    color: white;
+    text-decoration: none;
+    transition-duration:0.3s;
+    padding: 0 0 1rem 0;
+}
+
+footer > section > a:hover{
+    text-shadow: 0 0 15px #00eeff;
+    transition-duration:0.3s;
+    transform: scale(1.15);
+}
+
+
+/* index page */
+
+
+/* For Mobile Phone */
 @media (max-width:480px) {
     nav{
         display:block;
-        /* justify-content: center; */
-        padding: 5% 5% 5% 16%;
+        padding: 5% 0% 5% 11%;
     }
 
     nav>h1{
         padding-bottom: 8%;
     }
 
+    nav>section{
+        display: flex;
+        justify-content: center;
+        padding: 0 12% 1rem 0;
+    }
+
     nav>ul{
-        padding-left: 7%;
+        padding-left: 13%;
     }
 }
